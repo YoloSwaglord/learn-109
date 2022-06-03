@@ -177,9 +177,12 @@ COLLECT ls_entry INTO lt_hash.
 COLLECT ls_entry INTO lt_hash.
 
 LOOP AT lt_hash ASSIGNING <ls_hash>.
-  WRITE <ls_hash>-id.
-  WRITE <ls_hash>-anzahl.
-  WRITE <ls_hash>-preis.
+  WRITE 'ID:' && <ls_hash>-id.
+  NEW-LINE.
+  WRITE 'Anzahl:' && <ls_hash>-anzahl.
+  NEW-LINE.
+  WRITE 'Preis:' && <ls_hash>-preis.
+  NEW-LINE.
   SKIP.
 ENDLOOP.
 
