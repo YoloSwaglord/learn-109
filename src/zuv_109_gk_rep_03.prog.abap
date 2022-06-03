@@ -177,7 +177,7 @@ COLLECT ls_entry INTO lt_hash.
 COLLECT ls_entry INTO lt_hash.
 
 LOOP AT lt_hash ASSIGNING <ls_hash>.
-  WRITE 'ID:' && <ls_hash>-id.
+  WRITE 'ID :' && <ls_hash>-id.
   NEW-LINE.
   WRITE 'Anzahl:' && <ls_hash>-anzahl.
   NEW-LINE.
@@ -185,6 +185,7 @@ LOOP AT lt_hash ASSIGNING <ls_hash>.
   NEW-LINE.
   SKIP.
 ENDLOOP.
+"Er zählt die Anzahl hoch ohne den Preis zu addieren. Toll für die Auswertung,da einfach Preis * Anzahl.
 
 "7
 FIELD-SYMBOLS:
