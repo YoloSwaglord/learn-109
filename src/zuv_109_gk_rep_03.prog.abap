@@ -185,7 +185,7 @@ LOOP AT lt_hash ASSIGNING <ls_hash>.
   NEW-LINE.
   SKIP.
 ENDLOOP.
-"Er zählt die Anzahl hoch ohne den Preis zu addieren. Toll für die Auswertung,da einfach Preis * Anzahl.
+"Er zählt die Anzahl und den Preis hoch. Muss also nicht mehr selbst berechnet werden
 
 "7
 FIELD-SYMBOLS:
